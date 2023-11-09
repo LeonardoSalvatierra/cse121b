@@ -3,7 +3,10 @@
 /* Step 1 - Setup type tasks - no code required */
 
 /* Step 2 - Variables */
-
+let fullName = "Leonardo Salvatierra";
+let currentYear = new Date().getFullYear();
+let profilePicture = "images/me.jpg";
+const nameElement = document.getElementById("name");
 
 
 
