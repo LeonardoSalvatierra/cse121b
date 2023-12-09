@@ -62,7 +62,10 @@ document.querySelector("#odds").innerHTML = numbersArray.filter(number => number
 /* Output Evens Only Array */
 document.querySelector("#evens").innerHTML = numbersArray.filter(number => number % 2 === 0);
 /* Output Sum of Org. Array */
-
+let sumOfArray = numbersArray.reduce((acc, num) => acc + num, 0);
 /* Output Multiplied by 2 Array */
-
+let multipliedArray = numbersArray.map(number => number * 2);
+document.querySelector("#multiplied").innerHTML = multipliedArray.join(", ");
 /* Output Sum of Multiplied by 2 Array */
+let sumOfMultipliedArray = numbersArray.map(number => number * 2).reduce((acc, num) => acc + num, 0);
+document.querySelector("#sumOfMultiplied").innerText = sumOfMultipliedArray;
